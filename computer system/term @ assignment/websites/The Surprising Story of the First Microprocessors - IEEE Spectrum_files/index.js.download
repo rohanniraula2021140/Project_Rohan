@@ -1,0 +1,277 @@
+(function (cjs, an) {
+
+var p; // shortcut to reference prototypes
+var lib={};var ss={};var img={};
+lib.ssMetadata = [];
+
+
+// symbols:
+
+
+
+(lib.ADI_PwrEV_DBA_300x250_Bknd = function() {
+	this.initialize(img.ADI_PwrEV_DBA_300x250_Bknd);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,300,250);
+
+
+(lib.ADI_PwrEV_DBA_300x250_Logo = function() {
+	this.initialize(img.ADI_PwrEV_DBA_300x250_Logo);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,300,250);
+
+
+(lib.ADI_PwrEV_DBA_V1_300x250_CTA = function() {
+	this.initialize(img.ADI_PwrEV_DBA_V1_300x250_CTA);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,300,250);
+
+
+(lib.ADI_PwrEV_DBA_V1_300x250_HL1 = function() {
+	this.initialize(img.ADI_PwrEV_DBA_V1_300x250_HL1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,300,250);
+
+
+(lib.ADI_PwrEV_DBA_V1_300x250_HL2 = function() {
+	this.initialize(img.ADI_PwrEV_DBA_V1_300x250_HL2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,300,250);
+
+
+(lib.ADI_PwrEV_DBA_V1_300x250_HL3 = function() {
+	this.initialize(img.ADI_PwrEV_DBA_V1_300x250_HL3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,300,250);// helper functions:
+
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+
+
+(lib.mainButton = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,255,102,0.498)").s().p("A3bTiMAAAgnDMAu3AAAMAAAAnDg");
+	this.shape.setTransform(150,125);
+	this.shape._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(3).to({_off:false},0).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = null;
+
+
+(lib.F3 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.ADI_PwrEV_DBA_V1_300x250_HL3();
+	this.instance.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.F3, new cjs.Rectangle(0,0,300,250), null);
+
+
+(lib.F2 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.ADI_PwrEV_DBA_V1_300x250_HL2();
+	this.instance.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.F2, new cjs.Rectangle(0,0,300,250), null);
+
+
+(lib.F1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.ADI_PwrEV_DBA_V1_300x250_HL1();
+	this.instance.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.F1, new cjs.Rectangle(0,0,300,250), null);
+
+
+(lib.CTA = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.ADI_PwrEV_DBA_V1_300x250_CTA();
+	this.instance.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.CTA, new cjs.Rectangle(0,0,300,250), null);
+
+
+// stage content:
+(lib.index = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_193 = function() {
+		this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(193).call(this.frame_193).wait(1));
+
+	// button
+	this.btn_main = new lib.mainButton();
+	this.btn_main.name = "btn_main";
+	this.btn_main.parent = this;
+	new cjs.ButtonHelper(this.btn_main, 0, 1, 2, false, new lib.mainButton(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.btn_main).wait(194));
+
+	// Border
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#000000").ss(1,1,1).p("Au/wjId/AAMAAAAhHI9/AAg");
+	this.shape.setTransform(150,125,1.563,1.18);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(194));
+
+	// CTA
+	this.instance = new lib.CTA();
+	this.instance.parent = this;
+	this.instance.setTransform(150,125,1,1,0,0,0,150,125);
+	this.instance.alpha = 0;
+	this.instance._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(177).to({_off:false},0).to({alpha:1},16).wait(1));
+
+	// F3
+	this.instance_1 = new lib.F3();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(80,300,1,1,0,0,0,80,300);
+	this.instance_1.alpha = 0;
+	this.instance_1._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(160).to({_off:false},0).to({alpha:1},16).wait(18));
+
+	// F2
+	this.instance_2 = new lib.F2();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(80,300,1,1,0,0,0,80,300);
+	this.instance_2.alpha = 0;
+	this.instance_2._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(80).to({_off:false},0).to({alpha:1},14).wait(52).to({alpha:0},14).wait(34));
+
+	// F1
+	this.instance_3 = new lib.F1();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(80,300,1,1,0,0,0,80,300);
+	this.instance_3.alpha = 0;
+	this.instance_3._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(3).to({_off:false},0).to({alpha:1},13).wait(50).to({alpha:0},14).wait(114));
+
+	// LOGO
+	this.instance_4 = new lib.ADI_PwrEV_DBA_300x250_Logo();
+	this.instance_4.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(194));
+
+	// BG
+	this.instance_5 = new lib.ADI_PwrEV_DBA_300x250_Bknd();
+	this.instance_5.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(194));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(149,124,302,252);
+// library properties:
+lib.properties = {
+	id: 'C2538E558DD245E59E060B8D02091D1F',
+	width: 300,
+	height: 250,
+	fps: 24,
+	color: "#FFFFFF",
+	opacity: 1.00,
+	manifest: [
+		{src:"ADI_PwrEV_DBA_300x250_Bknd.jpg", id:"ADI_PwrEV_DBA_300x250_Bknd"},
+		{src:"ADI_PwrEV_DBA_300x250_Logo.png", id:"ADI_PwrEV_DBA_300x250_Logo"},
+		{src:"ADI_PwrEV_DBA_V1_300x250_CTA.png", id:"ADI_PwrEV_DBA_V1_300x250_CTA"},
+		{src:"ADI_PwrEV_DBA_V1_300x250_HL1.png", id:"ADI_PwrEV_DBA_V1_300x250_HL1"},
+		{src:"ADI_PwrEV_DBA_V1_300x250_HL2.png", id:"ADI_PwrEV_DBA_V1_300x250_HL2"},
+		{src:"ADI_PwrEV_DBA_V1_300x250_HL3.png", id:"ADI_PwrEV_DBA_V1_300x250_HL3"}
+	],
+	preloads: []
+};
+
+
+
+// bootstrap callback support:
+
+(lib.Stage = function(canvas) {
+	createjs.Stage.call(this, canvas);
+}).prototype = p = new createjs.Stage();
+
+p.setAutoPlay = function(autoPlay) {
+	this.tickEnabled = autoPlay;
+}
+p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
+p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
+p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
+
+p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+
+an.bootcompsLoaded = an.bootcompsLoaded || [];
+if(!an.bootstrapListeners) {
+	an.bootstrapListeners=[];
+}
+
+an.bootstrapCallback=function(fnCallback) {
+	an.bootstrapListeners.push(fnCallback);
+	if(an.bootcompsLoaded.length > 0) {
+		for(var i=0; i<an.bootcompsLoaded.length; ++i) {
+			fnCallback(an.bootcompsLoaded[i]);
+		}
+	}
+};
+
+an.compositions = an.compositions || {};
+an.compositions['C2538E558DD245E59E060B8D02091D1F'] = {
+	getStage: function() { return exportRoot.getStage(); },
+	getLibrary: function() { return lib; },
+	getSpriteSheet: function() { return ss; },
+	getImages: function() { return img; }
+};
+
+an.compositionLoaded = function(id) {
+	an.bootcompsLoaded.push(id);
+	for(var j=0; j<an.bootstrapListeners.length; j++) {
+		an.bootstrapListeners[j](id);
+	}
+}
+
+an.getComposition = function(id) {
+	return an.compositions[id];
+}
+
+
+
+})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+var createjs, AdobeAn;
